@@ -8,32 +8,22 @@ window.onload = () => {
     let resultDiv = document.querySelector('.result');
     let userScore = 0;
     let computerScore = 0;
-   
 
-
-    
-    // mainFunction = 
-
+    // mainFunction 
     const getComputerChoice = (computerMove) => {
         const choices = ["r", "p", "s"];
         const randomNumber = Math.floor(Math.random() * 3);
         computerMove = choices[randomNumber];
         return computerMove;
     }
+    // console.log(getComputerChoice());
 
-    console.log(getComputerChoice());
-
-    // const win = () => {
-    //     console.log('Win');
-    // }
-   
     const win = () => {
         // console.log('Win');
         // console.log(userScore);
         userScore++;
         userScoreSpan.innerHTML = userScore;
-        resultDiv.innerHTML = "You Won, now stop it!";
-      
+        resultDiv.innerHTML = "You Won, Congrats";
     }
     const lost = () => {
         // console.log('Looser');
@@ -46,7 +36,7 @@ window.onload = () => {
     }
 
     const game = ((userChoice) => {
-         computerChoice = getComputerChoice();
+        computerChoice = getComputerChoice();
         switch (userChoice + computerChoice) {
             case "rs":
             case "pr":
@@ -64,9 +54,9 @@ window.onload = () => {
             case "pp":
             case "ss":
                 draw();
-                break;             
+                break;
         }
-        
+
     })
 
     rockDiv.addEventListener('click', event => {
@@ -84,8 +74,4 @@ window.onload = () => {
         game("s");
 
     })
-
-   
-
-
 };
