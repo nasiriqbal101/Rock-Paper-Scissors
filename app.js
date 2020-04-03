@@ -56,7 +56,6 @@ window.onload = () => {
                 draw();
                 break;
         }
-
     })
 
     rockDiv.addEventListener('click', event => {

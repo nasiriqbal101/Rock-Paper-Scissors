@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "rock-paper",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5505,
+		"liveServer.settings.multiRootWorkspaceName": "rock-paper"
+	}
+}
